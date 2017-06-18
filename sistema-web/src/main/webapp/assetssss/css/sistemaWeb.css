@@ -1,0 +1,39 @@
+.modal.modal-wide .modal-dialog {
+	width: 65%;
+}
+
+.div-titulo-pagina {
+	background-color: #3E5367;
+}
+
+.titulo-font {
+	font-size: 25px;
+	color: #ECF0F1;
+}
+
+.name2 button
+{
+  margin-left:5px;
+}
+
+.btn-facebook{
+    border-radius:0;
+    background-color:#0971E4;
+    padding-left:0;
+    border:0 none;
+}
+.btn-facebook > span{
+    padding:6px 12px;
+    margin-right:12px;
+    background-color:#0A62C4;
+}
+.btn-facebook:hover,
+.btn-facebook:active,
+.btn-facebook:focus{
+    background:#0969d6;
+}
+.btn-facebook:hover > span,
+.btn-facebook:active > span,
+.btn-facebook:focus > span{
+    background:#095bb8;
+}
