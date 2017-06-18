@@ -1,7 +1,5 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-   <!-- Content Header (Page header) -->
+
    <section class="content-header">
       <h1 style="font: bold 14px Tahoma, Geneva, sans-serif">
          <img alt="Gerenciar produtos" src="assets/dist/icones/painel-controle.png" width="50" height="50">
@@ -42,7 +40,7 @@
                   </div>
                </a>
                <!-- ./col -->
-               <a href="venda-delivery.html">
+               <a ui-sref="vendaDelivery">
                   <div class="col-lg-2 col-xs-6">
                      <!-- small box -->
                      <div class="small-box bg-yellow">
@@ -281,6 +279,5 @@
       </div>
    </section>
    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+
 

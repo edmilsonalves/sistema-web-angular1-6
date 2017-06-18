@@ -39,7 +39,7 @@
       <ul class="sidebar-menu">
          <li class="header">NAVEGAÇÂO</li>
          <li class="<c:if test="${jspPageName eq 'dashboard.html'}">active</c:if> treeview">
-            <a href="dashboard.html">
+            <a ui-sref="dashboard">
                <i class="fa fa-cog"></i>
                <span>Painel de Controle</span>
             </a>
@@ -57,7 +57,7 @@
 
             <ul class="treeview-menu">
                <li class="<c:if test="${jspPageName eq 'clientes.html'}">active</c:if>">
-                  <a href="clientes.html">
+                  <a ui-sref="clientes">
                      <i class="fa fa-genderless "></i>
                      Clientes
                   </a>

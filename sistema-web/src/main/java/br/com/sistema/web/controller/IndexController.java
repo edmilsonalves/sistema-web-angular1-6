@@ -9,7 +9,7 @@ public class IndexController {
 
 	private static String GO_INDEX = "index";
 
-	@RequestMapping(value = "/index")
+	@RequestMapping(value = "/index.html")
 	public ModelAndView home() {
 		ModelAndView mav = new ModelAndView(GO_INDEX);
 		return mav;

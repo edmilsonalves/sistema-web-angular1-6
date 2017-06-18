@@ -36,6 +36,6 @@
 
 <div class="box-footer">
    <div class="btn-group mr-2" role="group" aria-label="Second group">
-      <a class="fontSize" href="dashboard.html"> Paine de Controle </a>
+      <a class="fontSize" ui-sref="dashboard"> Paine de Controle </a>
    </div>
 </div>

@@ -6,13 +6,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
-import org.springframework.web.servlet.DispatcherServlet;
-
-import com.opensymphony.sitemesh.webapp.SiteMeshFilter;
 
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 public class SistemaWebApplication {
@@ -34,23 +29,23 @@ public class SistemaWebApplication {
         return resolver;
     }
 
-	@Bean
-	public ServletRegistrationBean dispatcherRegistration(DispatcherServlet dispatcherServlet) {
-		ServletRegistrationBean registration = new ServletRegistrationBean(dispatcherServlet);
-		registration.setName("sistema-web");
-		registration.addUrlMappings("/page/*", "/none/*", "/plain/*");
-		return registration;
-	}
-
-	@Bean
-	public FilterRegistrationBean sitemeshFilter() {
-		FilterRegistrationBean filter = new FilterRegistrationBean();
-		filter.setName("sitemesh");
-		filter.setFilter(new SiteMeshFilter());
-		filter.addUrlPatterns("*.html");
-		filter.addInitParameter("decorators-file", "/WEB-INF/decorators.xml");
-		return filter;
-	}
+//	@Bean
+//	public ServletRegistrationBean dispatcherRegistration(DispatcherServlet dispatcherServlet) {
+//		ServletRegistrationBean registration = new ServletRegistrationBean(dispatcherServlet);
+//		registration.setName("sistema-web");
+//		registration.addUrlMappings("/page/*", "/none/*", "/plain/*");
+//		return registration;
+//	}
+//
+//	@Bean
+//	public FilterRegistrationBean sitemeshFilter() {
+//		FilterRegistrationBean filter = new FilterRegistrationBean();
+//		filter.setName("sitemesh");
+//		filter.setFilter(new SiteMeshFilter());
+//		filter.addUrlPatterns("*.html");
+//		filter.addInitParameter("decorators-file", "/WEB-INF/decorators.xml");
+//		return filter;
+//	}
 
 	@Bean
 	public ModelMapper modelMapper() {

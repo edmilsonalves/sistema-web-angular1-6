@@ -26,9 +26,6 @@ span.adicional-disponivels {
 </style>
 
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-   <!-- Content Header (Page header) -->
    <section class="content-header">
       <div class="jquery-waiting-base-container" style="display: none;"></div>
       <h1 style="font: bold 14px Tahoma, Geneva, sans-serif">
@@ -64,7 +61,7 @@ span.adicional-disponivels {
       <!-- /.row -->
    </section>
    <!-- /.content -->
-</div>
+
 <!-- Vendas Delivery -->
 <script src="assets/dist/js/pages/vendas/delivery/venda-delivery.js"></script>
 

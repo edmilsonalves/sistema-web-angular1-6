@@ -14,9 +14,6 @@
 <link rel="stylesheet"
 	href="assets/plugins/datatables/dataTables.bootstrap.css">
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-	<!-- Content Header (Page header) -->
 	<section class="content-header">
 		<div class="jquery-waiting-base-container" style="display: none;">
 		</div>
@@ -77,7 +74,6 @@
 		<!-- /.row -->
 	</section>
 	<!-- /.content -->
-</div>
 
 <!-- DataTables colocar na pagina cliente-->
 <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
